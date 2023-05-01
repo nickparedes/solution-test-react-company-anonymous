@@ -16,6 +16,32 @@ function App() {
       <BrowserRouter>
           <Navbar/>
           <MyRoutes/>
+          <Prueba/>
+          <Prueba/>
+          <Prueba/>
+          <Prueba/>
+          <Prueba/>
+          <Prueba/><Prueba/>
+          <Prueba/>
+          <Prueba/>
+          <var><Prueba/>
+          <Prueba/>
+          <Prueba/></var>
+          <Prueba/><Prueba/>
+          <Prueba/><Prueba/>
+          <Prueba/>
+          <Prueba/>
+          <Prueba/>
+          <Prueba/><Prueba/>
+          <Prueba/>
+          <Prueba/><Prueba/>
+          <Prueba/>
+          <Prueba/><Prueba/>
+          <Prueba/>
+          <Prueba/>
+          <Prueba/><Prueba/>
+          <Prueba/>
+          
           <Footer/>
       </BrowserRouter>
     </>
