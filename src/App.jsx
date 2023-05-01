@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 
 import Prueba from './components/prueba'
 import { BrowserRouter } from 'react-router-dom'
 import MyRoutes from './routers/routes'
-import Navbar from './components/Navbar'
+import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import styled from 'styled-components'
+import Loading from './components/Loading'
 
 function App() {
   
@@ -14,38 +13,22 @@ function App() {
   return (
     <>
       <BrowserRouter>
-          <Navbar/>
-          <MyRoutes/>
-          <Prueba/>
-          <Prueba/>
-          <Prueba/>
-          <Prueba/>
-          <Prueba/>
-          <Prueba/><Prueba/>
-          <Prueba/>
-          <Prueba/>
-          <var><Prueba/>
-          <Prueba/>
-          <Prueba/></var>
-          <Prueba/><Prueba/>
-          <Prueba/><Prueba/>
-          <Prueba/>
-          <Prueba/>
-          <Prueba/>
-          <Prueba/><Prueba/>
-          <Prueba/>
-          <Prueba/><Prueba/>
-          <Prueba/>
-          <Prueba/><Prueba/>
-          <Prueba/>
-          <Prueba/>
-          <Prueba/><Prueba/>
-          <Prueba/>
-          
+          <NavBar/>
+          <Container>
+            <MyRoutes/>
+            
+          </Container>
+  
           <Footer/>
+          
       </BrowserRouter>
     </>
   )
 }
+
+const Container = styled.div`
+  padding-top: 78.71px;
+`
+
 
 export default App

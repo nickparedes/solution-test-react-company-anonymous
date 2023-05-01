@@ -12,9 +12,9 @@ Pondremos el foco en obtener un **código simple, bien diseñado y organizado, e
 ## Desarrollo del proyecto
 
 - Se deberá clonar este repositorio para poder modificarlo y completarlo con la resolución del proyecto. -------------------------------------> x 
-- Una vez que su código esté listo, suba el código a un repositorio público propio y envíenos el enlace a dicho repositorio para que lo revisaremos.
+- Una vez que su código esté listo, suba el código a un repositorio público propio y envíenos el enlace a dicho repositorio para que lo revisaremos.   ---------------------------> x
 
-> Se pueden utilizar herramientas como [create-react-app](https://github.com/facebookincubator/create-react-app) y similares para inicializar el proyecto.
+> Se pueden utilizar herramientas como [create-react-app](https://github.com/facebookincubator/create-react-app) y similares para inicializar el proyecto.   ----------------------> x
 
 
 ## Prueba técnica
@@ -32,9 +32,9 @@ Además, agregue la siguiente información a su archivo `README`:
 ## Detalles
 Necesitará construir las siguientes 3 páginas con React:
 
-- Una página de "Inicio"
-- Una página de "Series"
-- Una página "Películas"
+- Una página de "Inicio"   -------------------------------> x(falta llenar)
+- Una página de "Series"   -------------------------------> x(falta llenar)
+- Una página "Películas"   -------------------------------> x(falta llenar)
 
 Cree componentes para cada parte de la página (por ejemplo, encabezado, contenido, pie de página, etc.). Dentro de la carpeta `/assets` podrá encontrar distintas imágenes para utilizar.
 
@@ -78,9 +78,9 @@ Para cada página debería leer los datos desde el archivo JSON [feed/sample.jso
 
 También necesitará manejar los estados de carga/loading y error de obtener los datos desde el archivo JSON:
 
-- Estado de "Carga/Loading" [screens/1.1-loading.jpg](./screens/1.1-loading.jpg)
-- Estado de "Error" [screens/1.2-error.jpg](./screens/1.2-error.jpg)
-
+- Estado de "Carga/Loading" [screens/1.1-loading.jpg](./screens/1.1-loading.jpg)    -------------------> x
+- Estado de "Error" [screens/1.2-error.jpg](./screens/1.2-error.jpg)                -------------------> x
+ 
 
 #### Opcional
 
