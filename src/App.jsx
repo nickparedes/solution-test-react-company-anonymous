@@ -6,6 +6,7 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import styled from 'styled-components'
 import Loading from './components/Loading'
+import Modals from './components/utils/Modals'
 
 function App() {
   
@@ -18,7 +19,7 @@ function App() {
             <MyRoutes/>
             
           </Container>
-  
+          <Modals/>
           <Footer/>
           
       </BrowserRouter>

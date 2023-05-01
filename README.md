@@ -32,24 +32,24 @@ Además, agregue la siguiente información a su archivo `README`:
 ## Detalles
 Necesitará construir las siguientes 3 páginas con React:
 
-- Una página de "Inicio"   -------------------------------> x(falta llenar)
+- Una página de "Inicio"   -------------------------------> x
 - Una página de "Series"   -------------------------------> x(falta llenar)
 - Una página "Películas"   -------------------------------> x(falta llenar)
 
-Cree componentes para cada parte de la página (por ejemplo, encabezado, contenido, pie de página, etc.). Dentro de la carpeta `/assets` podrá encontrar distintas imágenes para utilizar.
+Cree componentes para cada parte de la página (por ejemplo, encabezado, contenido, pie de página, etc.). Dentro de la carpeta `/assets` podrá encontrar distintas imágenes para utilizar. -------------------------------> x
 
-Las páginas también deben poder utilizarse en dispositivos móviles.
+Las páginas también deben poder utilizarse en dispositivos móviles. -------------------------------> x
 
-Puede suponer que no tiene que admitir navegadores heredados sin funciones como `fetch` o `flexbox`.
+Puede suponer que no tiene que admitir navegadores heredados sin funciones como `fetch` o `flexbox`. -------------------------------> x
 
 
 ### Página de “Inicio”
 
-> Ejemplo de referencia [screens/1-home.jpg](./screens/1-home.jpg).
+> Ejemplo de referencia [screens/1-home.jpg](./screens/1-home.jpg). -------------------------------> x
+  
+Esta será su pantalla index.html. -------------------------------> x
 
-Esta será su pantalla index.html.
-
-Deberá mostrar 2 bloques que conectarán con las páginas de "Series" y "Películas".
+Deberá mostrar 2 bloques que conectarán con las páginas de "Series" y "Películas". -------------------------------> x
 
 
 ### Páginas de “Serie” y “Películas”
@@ -58,7 +58,7 @@ Deberá mostrar 2 bloques que conectarán con las páginas de "Series" y "Pelíc
 
 Para cada página debería leer los datos desde el archivo JSON [feed/sample.json](https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json), luego:
 
-- Mostrar los primeros 20 resultados (`entries`). No es necesario paginar para ver más resultados. 
+- Mostrar los primeros 20 resultados (`entries`). No es necesario paginar para ver más resultados.  -------------------------------> x
 - Mostrar sólo si contienen el atributo `releaseYear` >= `2010`
 - Ordenar los resultados por el atributo `title` de manera ascendente con órden alfanumérico
 - Para la página de "Series" usar resultados con `programType` igual a `series`.

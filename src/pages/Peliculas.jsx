@@ -1,8 +1,12 @@
 import React from 'react'
+import GridMovies from '../components/GridMovies'
 
 const Peliculas = () => {
   return (
-    <div>Peliculas</div>
+    <div>
+      <GridMovies/>
+
+    </div>
   )
 }
 

@@ -5,6 +5,9 @@ import styled from 'styled-components';
 
 const NavBar = () => {
   let Links =[
+    
+    {name:"series",link:"/series"},
+    {name:"peliculas",link:"/peliculas"},
     {name:"LOGIN",link:"/"},
    
   ];
