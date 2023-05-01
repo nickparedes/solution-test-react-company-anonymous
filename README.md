@@ -11,7 +11,7 @@ Pondremos el foco en obtener un **código simple, bien diseñado y organizado, e
 
 ## Desarrollo del proyecto
 
-- Se deberá clonar este repositorio para poder modificarlo y completarlo con la resolución del proyecto.
+- Se deberá clonar este repositorio para poder modificarlo y completarlo con la resolución del proyecto. -------------------------------------> x 
 - Una vez que su código esté listo, suba el código a un repositorio público propio y envíenos el enlace a dicho repositorio para que lo revisaremos.
 
 > Se pueden utilizar herramientas como [create-react-app](https://github.com/facebookincubator/create-react-app) y similares para inicializar el proyecto.
