@@ -59,19 +59,20 @@ Deberá mostrar 2 bloques que conectarán con las páginas de "Series" y "Pelíc
 Para cada página debería leer los datos desde el archivo JSON [feed/sample.json](https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json), luego:
 
 - Mostrar los primeros 20 resultados (`entries`). No es necesario paginar para ver más resultados.  -------------------------------> x
-- Mostrar sólo si contienen el atributo `releaseYear` >= `2010`
-- Ordenar los resultados por el atributo `title` de manera ascendente con órden alfanumérico
-- Para la página de "Series" usar resultados con `programType` igual a `series`.
+- Mostrar sólo si contienen el atributo `releaseYear` >= `2010` -------------------------------> x
+- Ordenar los resultados por el atributo `title` de manera ascendente con órden alfanumérico -------------------------------> x
+- Para la página de "Series" usar resultados con `programType` igual a `series`. -------------------------------> x
 - Para la página de "Películas" usar resultados con `programType` igual a `movie`. 
+-------------------------------> x
 - Los atributos que debes utilizar para mostrar en la caja de cada resultado son:
-  - `title`
-  - `images` → `Poster Art` → `url`
+  - `title` -------------------------------> x
+  - `images` → `Poster Art` → `url` -------------------------------> x
 - Al posicionar el mouse sobre cada resultado la caja debe reducir su opacidad y mostrar borde blanco.
 - Al hacer click sobre el titulo deberá abrirse un popup mostrando la información completa:
-  - `title`
-  - `description`
-  - `releaseYear`
-  - `images` → `Poster Art` → `url`
+  - `title` -------------------------------> x
+  - `description` -------------------------------> x
+  - `releaseYear` -------------------------------> x
+  - `images` → `Poster Art` → `url` -------------------------------> x
 
 
 ### Otras consideraciones

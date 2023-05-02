@@ -18,8 +18,8 @@ function App() {
           <Container>
             <MyRoutes/>
             
-          </Container>
-          <Modals/>
+            </Container>
+          
           <Footer/>
           
       </BrowserRouter>
