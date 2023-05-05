@@ -25,9 +25,11 @@ Se deberá incluir también `README` con instrucciones de configuración/ejecuci
 Además, agregue la siguiente información a su archivo `README`:
 
 - ¿Cómo decidió las opciones técnicas y arquitectónicas utilizadas como parte de su solución?
+Se decidió de acuerdo a la simplicidad del problema
 - ¿Hay alguna mejora que pueda hacer en su envío?
+Si, podría mejorarse en el ambito de testing
 - ¿Qué haría de manera diferente si se le asignara más tiempo?
-
+Mejoraría el css ya que es generico
 
 ## Detalles
 Necesitará construir las siguientes 3 páginas con React:
@@ -85,26 +87,26 @@ También necesitará manejar los estados de carga/loading y error de obtener los
 
 #### Opcional
 
-- Filtro por año
-  - agregar arriba del listado de series/películas un input que permita filtrar películas por año.
-- Paginación
-  - agregar un selector de cantidad de resultados a mostrar (5, 10, 20)
-  - permitir ir a próxima página de resultados o página anterior
-  - permitir moverse de página en página utilizando un parámetro en la URL
+- Filtro por año -------------------> x
+  - agregar arriba del listado de series/películas un input que permita filtrar películas por año. -------------------> x
+- Paginación -------------------> x
+  - agregar un selector de cantidad de resultados a mostrar (5, 10, 20) -------------------> x
+  - permitir ir a próxima página de resultados o página anterior -------------------> x
+  - permitir moverse de página en página utilizando un parámetro en la URL -------------------> x
 
 
 ## Requisitos de Stack
 
-Para el desarrollo de la aplicación deberá utilizar:
+Para el desarrollo de la aplicación deberá utilizar: -------------------> x
 
-- React / React Hooks
-- Redux
-- Librería de estilos (styled-components, CSS modules, o similar)
-- Mobile friendly
-- Unit tests (jest, react-testing-library, o similar)
-- Manejo de errores
-- _(opcional)_ TypeScript
-- _(opcional)_ Integration/E2E tests
+- React / React Hooks -------------------> x
+- Redux -------------------> x 
+- Librería de estilos (styled-components, CSS modules, o similar)-------------------> x 
+- Mobile friendly -------------------> x
+- Unit tests (jest, react-testing-library, o similar) 
+- Manejo de errores -------------------> x
+- _(opcional)_ TypeScript 
+- _(opcional)_ Integration/E2E tests -
 - _(opcional)_ Deploy automático
 - _(opcional)_ ...
 
