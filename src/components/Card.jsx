@@ -4,6 +4,7 @@ import Modals from './utils/Modals';
 
 function Card(props) {
 
+ 
   return (
     <div className="max-w-md mx-auto my-8 bg-white rounded-md overflow-hidden shadow-md">
       <img

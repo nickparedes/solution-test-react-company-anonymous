@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { helpHttp } from './helpers/helpHttp';
 import ModalCart from './ModalCart';
 import { Loader } from 'semantic-ui-react';
-import Filtros from './Filtros';
+import {Filtros, Paginacion}from './Filtros';
+import { redimensionarArreglo } from './helpers/residimensionarArreglo';
 
 export const obj = [
   {
@@ -22,27 +23,107 @@ export const obj = [
   },
 
 ];
-export default function GridMovies({loading, error, peliculas, twentyPeliculas}) {
-  
-  
+export default function GridMovies() {
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [twentyPeliculas, setTwentyPeliculas] = useState([]);
+  const [filtros, setFiltros] = useState({
+    initialNumOfMovies: 20,
+    año: null,
+    cardsForPage: 5,
+    pagina: 0,
+  });
+  const [peliculas, setPeliculas] = useState([]);
 
+  const cardsForPage = (e) => {
+    setFiltros({
+      ...filtros,
+      cardsForPage: e,
+      pagina: 0,
+    });
+  };
+
+  const numOfPage = (e) => {
+    setFiltros({
+      ...filtros,
+      pagina: e,
+    });
+  };
+
+  const inputAnio = (e) => {
+    setFiltros({
+      ...filtros,
+      año: e,
+      initialNumOfMovies: peliculas.length , 
+      pagina: 0,
+    });
+
+  };
+
+  let api = helpHttp();
+  let url =
+    "https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json";
+
+  useEffect(() => {
+    setLoading(true);
+
+    api.get(url).then((res) => {
+      const filteredMovies = res.entries.filter(
+        (item) => item.programType === "movie"
+      );
+      const twentyFilteredMovies = filteredMovies
+        .filter((item) => item.releaseYear >= 2010)
+        .slice(0, 20)
+        .sort((a, b) => {
+          const titleA = a.title.toUpperCase();
+          const titleB = b.title.toUpperCase();
+
+          if (titleA < titleB) {
+            return -1;
+          }
+
+          if (titleA > titleB) {
+            return 1;
+          }
+
+          return 0;
+        });
+      setTwentyPeliculas(twentyFilteredMovies);
+    });
+
+    setLoading(false);
+  }, [url]);
+
+  useEffect(() => {
+    const array = redimensionarArreglo(
+      twentyPeliculas,
+      filtros.cardsForPage,
+      filtros.año
+    );
+    setPeliculas(array);
+  }, [twentyPeliculas, filtros.cardsForPage, filtros.año]);
+
+  
+  
+  
   return (
     <div>
-       <Filtros/>
+       <Filtros cardsForPage={cardsForPage} inputAnio={inputAnio}/>
        {loading && <Loader />}
       {error && <Error/>}
-      {peliculas || ( 
+      { peliculas.length > 0 && (  
                 
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold mb-4">Películas</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {twentyPeliculas.map((pelicula, index) => (
+           { peliculas[filtros.pagina].map((pelicula, index) => (
               <Card key={index} {...pelicula} />
-            ))}
+              
+            ))} 
           </div>
-          <Paginacion/>
+          <Paginacion filtros = {filtros} numOfPage = {numOfPage}/>
         </div>
-        )
+         ) 
       
       } 
     </div>
@@ -50,20 +131,3 @@ export default function GridMovies({loading, error, peliculas, twentyPeliculas})
 }
 
 
-const Paginacion = ()=>{
-  return(
-
-    <div className="flex items-center justify-center space-x-4 py-4">
-      <button className="bg-gray-200 hover:bg-gray-300 rounded-md px-3 py-2">Anterior</button>
-      
-      <div className="flex space-x-2">
-      <button className="bg-gray-200 hover:bg-gray-300 rounded-md px-3 py-2">2</button>
-      <button className="bg-gray-200 hover:bg-gray-300 rounded-md px-3 py-2">3</button>
-      <button className="bg-gray-200 hover:bg-gray-300 rounded-md px-3 py-2">4</button>
-      <button className="bg-gray-200 hover:bg-gray-300 rounded-md px-3 py-2">5</button>
-      </div>
-      
-      <button className="bg-gray-200 hover:bg-gray-300 rounded-md px-3 py-2">Siguiente</button>
-    </div>
-  )
-}
